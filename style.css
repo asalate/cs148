@@ -1,0 +1,168 @@
+.text{
+    color: #ffffff;
+    display:block;
+    
+    z-index:100;
+    position:relative;    
+   
+    font-size:10px;
+    font-weight:bold;
+    
+    top:-2.5em;  
+    
+  /* http://robertnyman.com/2010/01/11/css-background-transparency-without-affecting-child-elements-through-rgba-and-filters/ */  
+   backgroud-color:#aaaaaa;
+/* Fallback for web browsers that doesn't support RGBa */
+background: rgb(200, 200, 200);
+/* RGBa with 0.6 opacity */
+background: rgba(200, 200, 200, 0.6);
+/* For IE 5.5 - 7*/
+filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#99000000, endColorstr=#99000000);
+/* For IE 8*/
+-ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr=#99000000, endColorstr=#99000000)";
+}
+
+/* ----- The Background ------ */
+
+body{
+/* Mozilla Firefox */ 
+/* IE10 Consumer Preview */ 
+background-image: -ms-linear-gradient(top, #FFFFFF 0%, #00A3EF 100%);
+
+/* Mozilla Firefox */ 
+background-image: -moz-linear-gradient(top, #FFFFFF 0%, #00A3EF 100%);
+
+/* Opera */ 
+background-image: -o-linear-gradient(top, #FFFFFF 0%, #00A3EF 100%);
+
+/* Webkit (Safari/Chrome 10) */ 
+background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, #FFFFFF), color-stop(1, #00A3EF));
+
+/* Webkit (Chrome 11+) */ 
+background-image: -webkit-linear-gradient(top, #FFFFFF 0%, #00A3EF 100%);
+
+/* W3C Markup, IE10 Release Preview */ 
+background-image: linear-gradient(to bottom, #FFFFFF 0%, #00A3EF 100%);	
+    max-width: 1024px;
+
+    margin: auto;   
+}
+
+/* ----- Headings ------- */
+
+h1{
+width: fit-content;
+padding: .5em;
+}
+h2{
+width: fit-content;
+padding: .5em;
+}
+h3{
+width: fit-content;
+padding: .5em;
+text-align: center;
+font-size: larger;
+}
+
+/* ----- Form ----- */
+
+form{
+background-color: #C0C0C0;
+/*font-size: 1.3em;*/
+}
+legend{
+font-size: 1.2em;
+}
+
+.lists{
+font-size: 1.1em;
+}
+
+/*nav dl a{
+	text-decoration: none;
+	list-style-type: none;
+    display: inline;
+}
+*/
+
+/* ----- The Wall ----- */
+
+#thewall{
+text-align: center;
+}
+
+#news{
+font-size: 1.2em
+}
+
+ol.photos li{
+    list-style-type: none;
+    display: inline;
+}
+
+#photos{ 
+    margin: 0 0 30px 0; 
+    padding: 0; 
+    max-width: 600px; 
+    list-style: none; 
+    overflow: hidden; 
+}
+
+a {
+	text-decoration:none;
+	font-variant: small-caps;
+}
+a:link {
+	color: #000000;
+}
+a:visited {
+	color: #000000;
+}
+a:hover {
+	color: #0066CC;
+}
+a.header {
+	margin: 0% 2%;
+}
+
+/* ----- The Menu ------ */
+
+#navMenu {
+    padding-left: 5.33333333%;
+		background-color:#00FFFF;
+		font-size: larger;
+		padding-top: 0.2em;
+		padding-bottom: 0.2em;
+		text-align: center;
+		font-size: 1.5em;
+}
+
+nav ol li{
+    display: inline;
+    list-style-type: none;
+    padding-right: 5em;
+} 
+
+/* ---- Footer ------ */
+ 
+footer{
+    text-align: center;
+    padding: .2em;
+}
+
+/* ------ Imagine on Info Page ------ */
+
+#infoimg{
+		margin-left: auto;
+		margin-right: auto;
+		text-align: center;
+}
+/* ----- Errors on Form ------ */
+
+#errors ol li{
+    color: red;
+		font-size: larger;
+}
+
+
