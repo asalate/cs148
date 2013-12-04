@@ -37,7 +37,7 @@ $debug = true;
 if ($debug) print "<p>DEBUG MODE IS ON</p>"; 
 
 $baseURL = "http://www.uvm.edu/~asalate/"; 
-$folderPath = "cs148/assignment4.1"; 
+$folderPath = "cs148/assignment7.1/"; 
 // full URL of this form 
 $yourURL = $baseURL . $folderPath . "register.php"; 
 

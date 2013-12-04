@@ -12,8 +12,8 @@
  *  
  *  
  */ 
-require_once("connect.php"); 
-include_once('mailMessage.php'); 
+require_once("https://www.uvm.edu/~asalate/cs148/assignment7.1/connect.php"); 
+include_once('https://www.uvm.edu/~asalate/cs148/assignment7.1/mailMessage.php'); 
 //############################################################################# 
 //  
 // Initialize variables 
@@ -21,7 +21,7 @@ include_once('mailMessage.php');
 $debug = false; 
 
 $baseURL = "https://www.uvm.edu/~asalate/"; 
-$folderPath = "cs148/assignment4.1"; 
+$folderPath = "cs148/assignment7.1/form/"; 
 // full URL of this form 
 $yourURL = $baseURL . $folderPath . "form.php"; 
 

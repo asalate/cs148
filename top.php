@@ -7,7 +7,7 @@
 <meta name="description" content="A Wall of Photos with students from UVM">
     
 <link rel="stylesheet"
-	  href="style.css"
+	  href="http://www.uvm.edu/~asalate/cs148/assignment7.1/form/style.css"
       media="screen">
 
 <!--[if lt IE 9]>
