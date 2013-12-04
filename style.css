@@ -11,13 +11,13 @@
     top:-2.5em;  
     
   /* http://robertnyman.com/2010/01/11/css-background-transparency-without-affecting-child-elements-through-rgba-and-filters/ */  
-   backgroud-color:#aaaaaa;
+   /*backgroud-color:#aaaaaa; */
 /* Fallback for web browsers that doesn't support RGBa */
 background: rgb(200, 200, 200);
 /* RGBa with 0.6 opacity */
 background: rgba(200, 200, 200, 0.6);
 /* For IE 5.5 - 7*/
-filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#99000000, endColorstr=#99000000);
+/*filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#99000000, endColorstr=#99000000);*/
 /* For IE 8*/
 -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr=#99000000, endColorstr=#99000000)";
 }
@@ -51,15 +51,15 @@ background-image: linear-gradient(to bottom, #FFFFFF 0%, #00A3EF 100%);
 /* ----- Headings ------- */
 
 h1{
-width: fit-content;
+/*width: fit-content;*/
 padding: .5em;
 }
 h2{
-width: fit-content;
+/*idth: fit-content; */
 padding: .5em;
 }
 h3{
-width: fit-content;
+/*width: fit-content;*/
 padding: .5em;
 text-align: center;
 font-size: larger;
@@ -87,9 +87,24 @@ font-size: 1.1em;
 */
 
 /* ----- The Wall ----- */
+figure{margin: 0; padding:0;}
 
-#thewall{
-text-align: center;
+.text{
+    color: #ffffff;
+    display:block;
+    
+    z-index:100;
+    position:relative;    
+   
+    font-size:10px;
+    font-weight:bold;
+    
+    top:-2.5em;
+}
+
+#theWall{
+    margin: auto;
+    max-width: 875px;
 }
 
 #news{
@@ -107,6 +122,16 @@ ol.photos li{
     max-width: 600px; 
     list-style: none; 
     overflow: hidden; 
+}
+
+.pic {
+    border: 2px solid #2d3232;
+  /*  box-shadow: 5px 5px 5px #111111;*/
+    float: left;
+    height: 100px;
+    overflow: hidden;
+  /*  padding-bottom: 0.2em; */
+    width: 100px;
 }
 
 a {
@@ -164,5 +189,3 @@ footer{
     color: red;
 		font-size: larger;
 }
-
-
